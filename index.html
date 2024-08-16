@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일정 관리 웹 애플리케이션</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>일정 관리</h1>
+        <button id="toggleMode">편집 모드</button>
+        <div id="passwordContainer" class="hidden">
+            <label for="password">비밀번호 입력:</label>
+            <input type="password" id="password">
+            <button id="submitPassword">제출</button>
+        </div>
+        <div id="calendar"></div>
+        <div id="scheduleContainer"></div>
+        <div id="scheduleForm" class="hidden">
+            <h2>일정 추가</h2>
+            <label for="date">날짜:</label>
+            <input type="date" id="date">
+            <label for="event">일정:</label>
+            <input type="text" id="event">
+            <button id="addEvent">추가</button>
+            <button id="closeForm">닫기</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
